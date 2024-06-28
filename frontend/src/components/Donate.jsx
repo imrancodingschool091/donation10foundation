@@ -27,7 +27,7 @@ const Donate = () => {
 
     try {
       let response = await axios.post(
-        "http://localhost:4000/user/payment",
+        "https://donation10foundation.onrender.com/user/payment,
         userInfo
       );
 
