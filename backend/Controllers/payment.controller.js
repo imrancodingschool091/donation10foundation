@@ -20,7 +20,8 @@ export const paymentStatus = async (req, res) => {
         name: newPayment.name,
         email: newPayment.email,
         city:newPayment.city,
-        amount:newPayment.amount
+        amount:newPayment.amount,
+        date:newPayment.createdAt,
       },
     });
   } catch (error) {

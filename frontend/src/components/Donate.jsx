@@ -20,8 +20,10 @@ const Donate = () => {
       name: data.name,
       email: data.email,
       amount: 10, // Fixed amount
-      city: data.city
+      city: data.city,
+     
     };
+    console.log(data)
 
     try {
       let response = await axios.post(
@@ -35,10 +37,11 @@ const Donate = () => {
           "Payment",
           JSON.stringify(response.data.newPayment)
         );
+       
 
         setTimeout(() => {
           navigate("/payment");
-        }, 2000);
+        }, 500);
 
       } else if (response.status === 404) {
         toast.error(response.data.message, { position: "top-center" });

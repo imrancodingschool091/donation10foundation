@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const About = () => {
   return (
+    <>
+    <Navbar/>
+
+
     <section className="about">
       <div className="hero">
         <div className="banner">
@@ -15,6 +21,13 @@ const About = () => {
         </div>
       </div>
     </section>
+
+    <Footer/>
+    
+    
+    
+    </>
+   
   );
 };
 
